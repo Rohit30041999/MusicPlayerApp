@@ -1,0 +1,10 @@
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\bin\Debug\MusicPlayerApp.exe.config
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\bin\Debug\MusicPlayerApp.exe
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\bin\Debug\MusicPlayerApp.pdb
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.csproj.AssemblyReference.cache
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.Form1.resources
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.Properties.Resources.resources
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.csproj.GenerateResource.cache
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.csproj.CoreCompileInputs.cache
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.exe
+C:\Users\rohit\source\repos\MusicPlayerApp\MusicPlayerApp\obj\Debug\MusicPlayerApp.pdb
