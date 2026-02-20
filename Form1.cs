@@ -41,7 +41,40 @@ namespace MusicPlayerApp
             audioFile = new AudioFileReader(filePath);
             outputDevice = new WaveOutEvent();
             outputDevice.Init(audioFile);
+
+            outputDevice.PlaybackStopped += OutputDevice_PlaybackStopped;
+
             outputDevice.Play();
+            // start the time as well
+            timerTrack.Start();
+        }
+
+        private void OutputDevice_PlaybackStopped(object sender, StoppedEventArgs e) { 
+            if(audioFile != null && audioFile.Position >= audioFile.Length)
+            {
+                this.Invoke((MethodInvoker) delegate 
+                {
+                    // stop the timer of the previous music
+                    // before the next music plays
+                    timerTrack.Stop();
+                    btnNext.PerformClick();
+                }
+                    );
+            }
+        }
+
+        private void timerTrack_Tick(object sender, EventArgs e)
+        {
+            if(audioFile != null)
+            {
+                progressBarTrack.Maximum = (int)audioFile.TotalTime.TotalSeconds;
+                progressBarTrack.Value = Math.Min(
+                    (int)audioFile.CurrentTime.TotalSeconds,
+                    progressBarTrack.Maximum
+                    );
+
+                lblTime.Text = $"{audioFile.CurrentTime.ToString("mm\\:ss")} / {audioFile.TotalTime.ToString("mm\\:ss")}";
+            }
         }
 
 
